@@ -11,6 +11,7 @@ body{
 	border: 2px solid green;
 	float: left;
 	color: #000;
+	text-align: center;
 }
 
 .row{
@@ -21,4 +22,16 @@ body{
 .p-title{
 	float: left;
 	width: 100%;
+}
+
+.character{
+	height: 150px;
+}
+
+.enemies{
+	height: 150px;
+}
+
+.defender{
+	height: 150px;
 }
