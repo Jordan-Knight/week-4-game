@@ -34,7 +34,6 @@ var id = "";
 $(document).ready(function(){
 
 	$.each(clan, function(key){
-		console.log(key);
 		$("#" + key + "-hp").text(this.hp);
 	});
 	$(document).on("click", function(){
