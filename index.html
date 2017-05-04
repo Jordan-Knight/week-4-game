@@ -9,35 +9,38 @@
 </head>
 <body>
 <div class="header">Wu Tang RPG!</div>
-<div class="row player-bank">
+<div id="player-bank" class="row player-bank">
 	<div id="rza" class="tile">
 		<div class="p-title">RZA</div>
 		<img class="p-image" src="assets/images/Rza.jpg" style="width: 100px;">
-		<div class="hp"></div>
+		<div id="rza-hp"></div>
 	</div>
 	<div id="gza" class="tile" value="gza">
 		<div class="p-title">GZA</div>
 		<img class="p-image" src="assets/images/gza.jpg" style="width: 100px;">
-		<div class="hp"></div>
+		<div id="gza-hp"></div>
 	</div>
 	<div id="gfk" class="tile" value="gfk">
 		<div class="p-title">Ghost Face Killa</div>
 		<img class="p-image" src="assets/images/gfk.jpg" style="width: 100px;">
-		<div class="hp"></div>
+		<div id="gfk-hp"></div>
 	</div>
 	<div id="meth" class="tile" value="meth">
 		<div class="p-title">Method Man</div>
 		<img class="p-image" src="assets/images/Meth.jpg" style="width: 100px;">
-		<div class="hp"></div>
+		<div id="meth-hp"></div>
 	</div>
 </div>
 <div class="row character">Your Character</div>
+<div id="player" class="row"></div>
 <div class="row enemies">Enemies Available to Attack</div>
+<div id="enemy" class="row"></div>
 <div class="row">Fight Section</div>
 <div class="row fight">
-	<button class="attack">BATTLE!</button>
+	<button id="battle">BATTLE!</button>
 </div>
 <div class="row defender">Defender</div>
+<div id="defender"></div>
 <div class="row messenger"></div>
 </body>
 </html>

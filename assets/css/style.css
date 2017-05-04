@@ -25,13 +25,13 @@ body{
 }
 
 .character{
-	height: 150px;
+	height: 20px;
 }
 
 .enemies{
-	height: 150px;
+	height: 20px;
 }
 
 .defender{
-	height: 150px;
+	height: 20px;
 }

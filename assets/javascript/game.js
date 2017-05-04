@@ -25,15 +25,88 @@ var clan = {
 	},
 }
 var playerChosen = false;
-var player = ;
-var enemy = ;
+var enemyChosen = false;
+var player = "";
+var enemy = "";
+var id = "";
 
 
 $(document).ready(function(){
 
-	$("#rza").on("click", function(){
-		playerChosen = true;
-		player = clan.rza;
-	})
+	$.each(clan, function(key){
+		console.log(key);
+		$("#" + key + "-hp").text(this.hp);
+	});
+	$(document).on("click", function(){
+	
+		if (playerChosen === false){
+			$("#rza").on("click", function(){
+				playerChosen = true;
+				player = clan.rza;
+				id = "rza";
+				$("#" + id).appendTo("#player");
+			});
+			$("#gza").on("click", function(){
+				playerChosen = true;
+				player = clan.gza;
+				id = "gza";
+				$("#" + id).appendTo("#player");
+			});
+			$("#gfk").on("click", function(){
+				playerChosen = true;
+				player = clan.gfk;
+				id = "gfk";
+				$("#" + id).appendTo("#player");
+			});
+			$("#meth").on("click", function(){
+				playerChosen = true;
+				player = clan.meth;
+				id = "meth";
+				$("#" + id).appendTo("#player");
+			});
+			$(document).on("click", function(){
+				if (playerChosen){
+					$("#player-bank").appendTo("#enemy");
+				}
+			});
+		}
+	
+
+		else if (playerChosen && enemyChosen === false){
+			$("#rza").on("click", function(){
+				enemyChosen = true;
+				enemy = clan.rza;
+				id = "rza";
+				$("#" + id).appendTo("#defender");
+			});
+			$("#gza").on("click", function(){
+				enemyChosen = true;
+				enemy = clan.gza;
+				id = "gza";
+				$("#" + id).appendTo("#defender");
+			});
+			$("#gfk").on("click", function(){
+				enemyChosen = true;
+				enemy = clan.gfk;
+				id = "gfk";
+				$("#" + id).appendTo("#defender");
+			});
+			$("#meth").on("click", function(){
+				enemyChosen = true;
+				enemy = clan.meth;
+				id = "meth";
+				$("#" + id).appendTo("#defender");
+			});
+
+		}
+		else{
+
+		}
+
+		$("#battle").on("click", function(){
+
+		});
+	
+	});
 
 }); 
